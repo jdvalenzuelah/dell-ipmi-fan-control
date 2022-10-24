@@ -9,9 +9,9 @@ def main(speed):
     print('enabling manual fan control')
     if(not enable_fancontrol()):
         print('enabled manual fan control')
-        print('setting fan speed to {speed}')
+        print(f'setting fan speed to {speed}')
         set_manual_fanspeed(speed)
-        print('fan speed set to {speed}')
+        print(f'fan speed set to {speed}')
     else:
         print('Fatal error')
 
