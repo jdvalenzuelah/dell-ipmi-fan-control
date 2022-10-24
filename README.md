@@ -1,1 +1,3 @@
-# dell-ipmi-fan-control
+# IPMI Fan Control
+
+Tested on Dell poweredge R210
