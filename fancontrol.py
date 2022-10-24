@@ -21,7 +21,7 @@ def disable_fancontrol() -> int:
     return _exec_raw_impi_cmd(_manual_fancontrol_toggle_command(enabled=False))
 
 def set_manual_fanspeed(speed: int) -> int:
-    if 100 > speed > 0:
+    if 100 >= speed >= 0:
         return _exec_raw_impi_cmd(_fan_speed_command(hex(speed)))
     else:
         raise Exception(f'Invalid speed {speed}. Fan speed must be between 0 and 100')
